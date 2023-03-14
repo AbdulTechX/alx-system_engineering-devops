@@ -1,2 +1,2 @@
 #!/bin/bah
-echo hello $USER
+echo hello user $USER
