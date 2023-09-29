@@ -1,23 +1,7 @@
 #!/usr/bin/env bash
-
-# Install nginx web server
- 
-# Update package list and install Nginx
-
-sudo apt update
-sudo apt install -y nginx
-
-# Create a default Nginx configuration file
-mkdir /etc/nginx/html
-touch /etc/nginx/html/index.html
-echo "Hello world!" > /etc/nginx/html/index.html
-printf %s "server {
-     listen      80 default_server;
-     listen      [::]:80 default_server;
-     root        /etc/nginx/html;
-     index       index.html index.htm;
-}
-" > /etc/nginx/sites-available/default
-
-# Restart Nginx without using systemctl
-service nginx restart
+# Installs nginx server
+apt-get update
+apt-get -y install nginx
+ufw allow 'Nginx HTTP'
+echo "Hello World!" > /var/www/html/index.html
+service nginx start
