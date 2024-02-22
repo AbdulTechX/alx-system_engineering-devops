@@ -4,12 +4,12 @@
 i=0
 
 # Using a while loop to display "Best School" 10 times
-while [ $i -lt 10 ]; do
+while [ $i -lt 11 ]; do
 	if [ $i -eq 9 ]; then
 		echo "Best School"
 		echo "Hi"
 	else
-		echo "best School"
+		echo "Best School"
 	fi
 	((i++))
 done
