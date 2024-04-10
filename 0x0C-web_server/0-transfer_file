@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Transfers a file from Holberton's client to another.
+# Transfers a file from Holberton's client to server.
 # Accepts four arguments:
 #+    The path to the file to be transferred.
 #+    The IP of the server to transfer the file to.
@@ -10,7 +10,7 @@
 file_to_transfer=""
 server_username=""
 server_ip=""
-ssh_key=""
+ssh_key_path=""
 
 # Check if the correct number of arguments is provided
 if [ $# -lt 4 ]
