@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# debugging nginx port 80
+#this is don by deleting existing ../sites-enabled/defualt and replace it
+# create  a symbolic link from Nginx defualt
+sudo ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+sudo service nginx restart
