@@ -47,5 +47,5 @@ frontend abdultechx-frontend-https
 
 backend abdultechx-backend
         balance roundrobin
-        server 350890-web-01 54.84.66.12 check
-        server 350890-web-02 52.3.249.232 check
+        server 350890-web-01 54.84.66.12:80 check
+        server 350890-web-02 52.3.249.232:80 check
