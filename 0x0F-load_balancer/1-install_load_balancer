@@ -35,8 +35,8 @@ frontend abdultechx_front
 
 backend abdultechx_backend
     balance roundrobin
-    server 350890-web-01 100.25.211.171:80 check
-    server 350890-web-02 100.24.72.44:80 check
+    server 350890-web-01 54.234.68.137:80 check
+    server 350890-web-02 52.3.249.232:80 check
 " >> /etc/haproxy/haproxy.cfg
 
 service haproxy restart
